@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chintal Dress | Timeless Elegance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .aesthetic-card:hover img {
+            transform: scale(1.05);
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-[#faf9f6] text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-widest uppercase brand-font">Chintal Dress</div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#home" class="hover:text-stone-500 transition">Home</a>
+                <a href="#collections" class="hover:text-stone-500 transition">Collections</a>
+                <a href="#about" class="hover:text-stone-500 transition">About</a>
+                <a href="#contact" class="hover:text-stone-500 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-stone-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-center text-white hero-gradient">
+        <div class="max-w-4xl px-6 fade-in">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">New Season Arrival</span>
+            <h1 class="text-5xl md:text-7xl mb-6 italic">Embrace Your Inner Grace</h1>
+            <p class="text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto">Discover a curated collection of dresses designed for the modern woman who values tradition and style.</p>
+            <a href="#collections" class="inline-block border border-white px-10 py-4 hover:bg-white hover:text-stone-900 transition duration-300 uppercase tracking-widest text-sm">
+                Explore Collection
+            </a>
+        </div>
+    </section>
+
+    <!-- Collection Categories -->
+    <section id="collections" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-4">Our Collections</h2>
+            <div class="w-12 h-0.5 bg-stone-300 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="aesthetic-card group cursor-pointer overflow-hidden">
+                <div class="relative overflow-hidden aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1888&auto=format&fit=crop" alt="Ethnic Wear" class="object-cover w-full h-full transition duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+                </div>
+                <h3 class="mt-6 text-xl text-center uppercase tracking-widest">Ethnic Couture</h3>
+            </div>
+            <div class="aesthetic-card group cursor-pointer overflow-hidden">
+                <div class="relative overflow-hidden aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1983&auto=format&fit=crop" alt="Casual Wear" class="object-cover w-full h-full transition duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+                </div>
+                <h3 class="mt-6 text-xl text-center uppercase tracking-widest">Modern Casuals</h3>
+            </div>
+            <div class="aesthetic-card group cursor-pointer overflow-hidden">
+                <div class="relative overflow-hidden aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=1908&auto=format&fit=crop" alt="Bridal Wear" class="object-cover w-full h-full transition duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+                </div>
+                <h3 class="mt-6 text-xl text-center uppercase tracking-widest">Bridal Dreams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-stone-100 py-24 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop" alt="Boutique" class="shadow-2xl rounded-sm">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl mb-6 italic">The Chintal Story</h2>
+                <p class="text-stone-600 leading-relaxed mb-6">
+                    At Chintal Dress, we believe that every garment tells a story. Our boutique is dedicated to creating high-quality, beautiful dresses that make every woman feel confident and elegant.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    Based in the heart of Anand, we bring a blend of traditional values and modern styles to your wardrobe.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 text-center bg-white">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl mb-8 italic">Get In Touch</h2>
+            <p class="text-stone-500 mb-12">Visit us for a personalized styling session or reach out for inquiries.</p>
+            
+            <div class="space-y-6">
+                <div class="flex flex-col items-center">
+                    <span class="text-xs uppercase tracking-widest text-stone-400 mb-2">Call or WhatsApp</span>
+                    <a href="tel:+919924670870" class="text-3xl font-light hover:text-stone-500 transition tracking-tighter">
+                        +91 99246 70870
+                    </a>
+                </div>
+                
+                <div class="pt-10">
+                    <button onclick="copyNumber()" class="bg-stone-800 text-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-stone-700 transition">
+                        Copy Phone Number
+                    </button>
+                    <div id="copy-msg" class="text-xs mt-3 text-green-600 opacity-0 transition duration-300">Number copied to clipboard!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-16 px-6 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <div class="text-white text-2xl brand-font tracking-widest uppercase mb-4">Chintal Dress</div>
+                <p class="text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+                    Redefining elegance through timeless designs and craftsmanship.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-xs uppercase tracking-[0.2em] mb-6">Our Studio</h4>
+                <address class="not-italic leading-relaxed text-sm">
+                    Narayan Vatik, Lambhvel road,<br>
+                    Anand - 388001, Gujarat, India
+                </address>
+                <div class="mt-4">
+                    <a href="https://www.google.com/maps/search/Narayan+Vatik+Lambhvel+road+Anand" target="_blank" class="text-xs text-stone-200 border-b border-stone-700 pb-1 hover:text-white transition">View on Google Maps</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:items-end justify-between">
+                <div class="flex space-x-6 text-xs uppercase tracking-widest mb-8 md:mb-0">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                </div>
+                <div class="text-[10px] uppercase tracking-widest text-stone-500 mt-auto">
+                    &copy; 2024 Chintal Dress.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyNumber() {
+            const num = "9924670870";
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = num;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            
+            const msg = document.getElementById("copy-msg");
+            msg.style.opacity = "1";
+            setTimeout(() => {
+                msg.style.opacity = "0";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
